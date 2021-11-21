@@ -1,0 +1,10 @@
+<html>
+  <script src="/htmx.min.js"></script>
+  <script src="/event-header.js"></script>
+  <style>
+    .box { min-width: 50px; min-height: 50px; border: solid; max-width: 50px; border-width: 1px; padding: 5px }
+  </style>
+  <body>
+    <div class="box" hx-get="/click" hx-ext="event-header" hx-swap="outerHTML"></div>
+  </body>
+</html>
